@@ -128,7 +128,7 @@ window.addEventListener('load', function () {
     const params = Object.fromEntries(urlSearchParams.entries());
     if (params.template === undefined) {
         console.log('no template specified, using default');
-        readJsonUrl("https://gist.githubusercontent.com/fuze9455/80b265c901b36a20f13362ea5f3569e2/raw/gdplace.json")
+        readJsonUrl("https://gist.githubusercontent.com/SomewhatAwake/80b265c901b36a20f13362ea5f3569e2/raw/gdplace.json")
     } else {
         console.log(`found template: ${params.template}`);
         readJsonUrl(params.template)
